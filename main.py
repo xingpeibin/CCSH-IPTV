@@ -523,17 +523,17 @@ about_video="https://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8?contentid=28201
 version=formatted_time+","+about_video
 # 瘦身版
 all_lines_simple =  ["更新时间,#genre#"] + [version] + ['\n'] +\
-             ["💓专享央视,#genre#"] + read_txt_to_array('专区/优质央视.txt') + ['\n'] + \
-             ["💓专享卫视,#genre#"] + read_txt_to_array('专区/优质卫视.txt') + ['\n'] + \
-             ["💓专享港澳台,#genre#"] + read_txt_to_array('专区/港澳台.txt') + ['\n'] + \
-             ["💓专享台湾,#genre#"] + read_txt_to_array('专区/台湾台.txt') + ['\n'] + \
-             ["💓专享电视剧,#genre#"] + read_txt_to_array('专区/电视剧.txt') + ['\n'] + \
-             ["💓专享源1,#genre#"] + read_txt_to_array('专区/专享源①.txt') + ['\n'] + \
-             ["💓专享源2,#genre#"] + read_txt_to_array('专区/专享源②.txt') + ['\n'] + \
-             ["💓专享定制,#genre#"] + read_txt_to_array('专区/定制源.txt') + ['\n'] + \
-             ["💓专享儿童,#genre#"] + read_txt_to_array('专区/儿童专享.txt') + ['\n'] + \
-             ["💓专享咪咕,#genre#"] + read_txt_to_array('专区/咪咕直播.txt') + ['\n'] + \
-             ["💓专享体育,#genre#"] + read_txt_to_array('专区/体育.txt') + ['\n'] + \
+             ["🌼专享央视,#genre#"] + read_txt_to_array('专区/优质央视.txt') + ['\n'] + \
+             ["🌼专享卫视,#genre#"] + read_txt_to_array('专区/优质卫视.txt') + ['\n'] + \
+             ["🌼专享港澳台,#genre#"] + read_txt_to_array('专区/港澳台.txt') + ['\n'] + \
+             ["🌼专享台湾,#genre#"] + read_txt_to_array('专区/台湾台.txt') + ['\n'] + \
+             ["🌼专享电视剧,#genre#"] + read_txt_to_array('专区/电视剧.txt') + ['\n'] + \
+             ["🌼专享源1,#genre#"] + read_txt_to_array('专区/专享源①.txt') + ['\n'] + \
+             ["🌼专享源2,#genre#"] + read_txt_to_array('专区/专享源②.txt') + ['\n'] + \
+             ["🌼专享定制,#genre#"] + read_txt_to_array('专区/定制源.txt') + ['\n'] + \
+             ["🌼专享儿童,#genre#"] + read_txt_to_array('专区/儿童专享.txt') + ['\n'] + \
+             ["🌼专享咪咕,#genre#"] + read_txt_to_array('专区/咪咕直播.txt') + ['\n'] + \
+             ["🌼专享体育,#genre#"] + read_txt_to_array('专区/体育.txt') + ['\n'] + \
              ["央视频道,#genre#"] + sort_data(ys_dictionary,correct_name_data(ys_lines)) + ['\n'] + \
              ["卫视频道,#genre#"] + sort_data(ws_dictionary,correct_name_data(ws_lines)) + ['\n'] + \
              ["体育频道,#genre#"] + sort_data(ty_dictionary,correct_name_data(ty_lines)) + ['\n'] + \
@@ -551,18 +551,18 @@ all_lines_simple =  ["更新时间,#genre#"] + [version] + ['\n'] +\
 
 # 合并所有对象中的行文本（去重，排序后拼接）
 all_lines =  ["更新时间,#genre#"] + [version] + ['\n'] +\
-             ["💓专享央视,#genre#"] + read_txt_to_array('专区/优质央视.txt') + ['\n'] + \
-             ["💓专享卫视,#genre#"] + read_txt_to_array('专区/优质卫视.txt') + ['\n'] + \
-             ["💓专享港澳台,#genre#"] + read_txt_to_array('专区/港澳台.txt') + ['\n'] + \
-             ["💓专享台湾,#genre#"] + read_txt_to_array('专区/台湾台.txt') + ['\n'] + \
-             ["💓专享电视剧,#genre#"] + read_txt_to_array('专区/电视剧.txt') + ['\n'] + \
-             ["💓专享源1,#genre#"] + read_txt_to_array('专区/专享源①.txt') + ['\n'] + \
-             ["💓专享源2,#genre#"] + read_txt_to_array('专区/专享源②.txt') + ['\n'] + \
-             ["💓专享定制,#genre#"] + read_txt_to_array('专区/定制源.txt') + ['\n'] + \
-             ["💓专享儿童,#genre#"] + read_txt_to_array('专区/儿童专享.txt') + ['\n'] + \
-             ["💓专享咪咕,#genre#"] + read_txt_to_array('专区/咪咕直播.txt') + ['\n'] + \
-             ["💓专享体育,#genre#"] + read_txt_to_array('专区/体育.txt') + ['\n'] + \
-             ["💓专享英语,#genre#"] + read_txt_to_array('专区/英语频道.txt') + ['\n'] + \
+             ["🌼专享央视,#genre#"] + read_txt_to_array('专区/优质央视.txt') + ['\n'] + \
+             ["🌼专享卫视,#genre#"] + read_txt_to_array('专区/优质卫视.txt') + ['\n'] + \
+             ["🌼专享港澳台,#genre#"] + read_txt_to_array('专区/港澳台.txt') + ['\n'] + \
+             ["🌼专享台湾,#genre#"] + read_txt_to_array('专区/台湾台.txt') + ['\n'] + \
+             ["🌼专享电视剧,#genre#"] + read_txt_to_array('专区/电视剧.txt') + ['\n'] + \
+             ["🌼专享源1,#genre#"] + read_txt_to_array('专区/专享源①.txt') + ['\n'] + \
+             ["🌼专享源2,#genre#"] + read_txt_to_array('专区/专享源②.txt') + ['\n'] + \
+             ["🌼专享定制,#genre#"] + read_txt_to_array('专区/定制源.txt') + ['\n'] + \
+             ["🌼专享儿童,#genre#"] + read_txt_to_array('专区/儿童专享.txt') + ['\n'] + \
+             ["🌼专享咪咕,#genre#"] + read_txt_to_array('专区/咪咕直播.txt') + ['\n'] + \
+             ["🌼专享体育,#genre#"] + read_txt_to_array('专区/体育.txt') + ['\n'] + \
+             ["🌼专享英语,#genre#"] + read_txt_to_array('专区/英语频道.txt') + ['\n'] + \
              ["央视频道,#genre#"] + sort_data(ys_dictionary,correct_name_data(ys_lines)) + ['\n'] + \
              ["卫视频道,#genre#"] + sort_data(ws_dictionary,correct_name_data(ws_lines)) + ['\n'] + \
              ["体育频道,#genre#"] + sort_data(ty_dictionary,correct_name_data(ty_lines)) + ['\n'] + \
@@ -583,7 +583,7 @@ all_lines =  ["更新时间,#genre#"] + [version] + ['\n'] +\
              ["上海频道,#genre#"] + sort_data(sh_dictionary,set(correct_name_data(sh_lines))) + ['\n'] + \
              ["湖南频道,#genre#"] + sort_data(hn_dictionary,set(correct_name_data(hn_lines))) + ['\n'] + \
              ["湖北频道,#genre#"] + sort_data(hb_dictionary,set(correct_name_data(hb_lines))) + ['\n'] + \
-             ["广东频道,#genre#"] + sort_data(gd_dictionary,set(correct_name_data(gd_lines))) + ['\n'] + \
+             ["🌼广东频道,#genre#"] + sort_data(gd_dictionary,set(correct_name_data(gd_lines))) + ['\n'] + \
              ["浙江频道,#genre#"] + sort_data(zj_dictionary,set(correct_name_data(zj_lines))) + ['\n'] + \
              ["山东频道,#genre#"] + sort_data(shandong_dictionary,set(correct_name_data(shandong_lines))) + ['\n'] + \
              ["江苏频道,#genre#"] + sorted(set(correct_name_data(jsu_lines))) + ['\n'] + \
