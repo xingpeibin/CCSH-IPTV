@@ -60,6 +60,7 @@ cw_lines = [] #春晚
 mtv_lines = [] #MTV
 
 # 地方台
+cs_lines = [] #地方台-上海频道
 sh_lines = [] #地方台-上海频道
 zj_lines = [] #地方台-浙江频道
 jsu_lines = [] #地方台-江苏频道
@@ -119,6 +120,7 @@ zb_dictionary=read_txt_to_array('主频道/直播中国.txt')
 mtv_dictionary=read_txt_to_array('主频道/MTV.txt') 
 
 # 地方台
+cs_dictionary=read_txt_to_array('地方台/潮汕频道.txt')
 sh_dictionary=read_txt_to_array('地方台/上海频道.txt') 
 zj_dictionary=read_txt_to_array('地方台/浙江频道.txt') 
 jsu_dictionary=read_txt_to_array('地方台/江苏频道.txt') 
@@ -312,6 +314,8 @@ def process_channel_line(line):
                 game_lines.append(line)
             elif channel_name in radio_dictionary and check_url_existence(radio_lines, channel_address):  #收音机频道
                 radio_lines.append(line)
+            elif channel_name in sh_dictionary 和 check_url_existence(cs_lines, channel_address): #地方台-潮汕频道
+                sh_lines.append(line)                
             elif channel_name in sh_dictionary and check_url_existence(sh_lines, channel_address):  #地方台-上海频道
                 sh_lines.append(line)
             elif channel_name in zj_dictionary and check_url_existence(zj_lines, channel_address):  #地方台-浙江频道
@@ -580,6 +584,7 @@ all_lines =  ["更新时间,#genre#"] + [version] + ['\n'] +\
              ["国际台,#genre#"] + sort_data(gj_dictionary,set(correct_name_data(gj_lines))) + ['\n'] + \
              ["纪录片,#genre#"] + sort_data(jlp_dictionary,set(correct_name_data(jlp_lines)))+ ['\n'] + \
              ["戏曲频道,#genre#"] + sort_data(xq_dictionary,set(correct_name_data(xq_lines))) + ['\n'] + \
+             ["🌼潮汕频道,#genre#"] + sort_data(xq_dictionary,set(correct_name_data(cs_lines))) + ['\n'] + \
              ["上海频道,#genre#"] + sort_data(sh_dictionary,set(correct_name_data(sh_lines))) + ['\n'] + \
              ["湖南频道,#genre#"] + sort_data(hn_dictionary,set(correct_name_data(hn_lines))) + ['\n'] + \
              ["湖北频道,#genre#"] + sort_data(hb_dictionary,set(correct_name_data(hb_lines))) + ['\n'] + \
