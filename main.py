@@ -60,7 +60,7 @@ cw_lines = [] #春晚
 mtv_lines = [] #MTV
 
 # 地方台
-cs_lines = [] #地方台-上海频道
+cs_lines = [] #地方台-潮汕频道
 sh_lines = [] #地方台-上海频道
 zj_lines = [] #地方台-浙江频道
 jsu_lines = [] #地方台-江苏频道
@@ -584,7 +584,7 @@ all_lines =  ["更新时间,#genre#"] + [version] + ['\n'] +\
              ["国际台,#genre#"] + sort_data(gj_dictionary,set(correct_name_data(gj_lines))) + ['\n'] + \
              ["纪录片,#genre#"] + sort_data(jlp_dictionary,set(correct_name_data(jlp_lines)))+ ['\n'] + \
              ["戏曲频道,#genre#"] + sort_data(xq_dictionary,set(correct_name_data(xq_lines))) + ['\n'] + \
-             ["🌼潮汕频道,#genre#"] + sort_data(xq_dictionary,set(correct_name_data(cs_lines))) + ['\n'] + \
+             ["🌼潮汕频道,#genre#"] + sort_data(cs_dictionary,set(correct_name_data(cs_lines))) + ['\n'] + \
              ["上海频道,#genre#"] + sort_data(sh_dictionary,set(correct_name_data(sh_lines))) + ['\n'] + \
              ["湖南频道,#genre#"] + sort_data(hn_dictionary,set(correct_name_data(hn_lines))) + ['\n'] + \
              ["湖北频道,#genre#"] + sort_data(hb_dictionary,set(correct_name_data(hb_lines))) + ['\n'] + \
