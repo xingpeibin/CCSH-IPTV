@@ -315,7 +315,7 @@ def process_channel_line(line):
             elif channel_name in radio_dictionary and check_url_existence(radio_lines, channel_address):  #收音机频道
                 radio_lines.append(line)
             elif channel_name in sh_dictionary 和 check_url_existence(cs_lines, channel_address): #地方台-潮汕频道
-                sh_lines.append(line)                
+                cs_lines.append(line)                
             elif channel_name in sh_dictionary and check_url_existence(sh_lines, channel_address):  #地方台-上海频道
                 sh_lines.append(line)
             elif channel_name in zj_dictionary and check_url_existence(zj_lines, channel_address):  #地方台-浙江频道
