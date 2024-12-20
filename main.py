@@ -123,10 +123,11 @@ mtv_dictionary=read_txt_to_array('主频道/MTV.txt')
 migu_dictionary=read_txt_to_array('主频道/咪咕直播.txt') 
 
 # 地方台
+cs_dictionary=read_txt_to_array('地方台/潮汕频道.txt')
+gd_dictionary=read_txt_to_array('地方台/广东频道.txt')
 sh_dictionary=read_txt_to_array('地方台/上海频道.txt') 
 zj_dictionary=read_txt_to_array('地方台/浙江频道.txt') 
-jsu_dictionary=read_txt_to_array('地方台/江苏频道.txt') 
-gd_dictionary=read_txt_to_array('地方台/广东频道.txt') 
+jsu_dictionary=read_txt_to_array('地方台/江苏频道.txt')
 hn_dictionary=read_txt_to_array('地方台/湖南频道.txt') 
 ah_dictionary=read_txt_to_array('地方台/安徽频道.txt') 
 hain_dictionary=read_txt_to_array('地方台/海南频道.txt') 
@@ -326,6 +327,8 @@ def process_channel_line(line):
                 jsu_lines.append(line)
             elif channel_name in gd_dictionary and check_url_existence(gd_lines, channel_address):  #地方台-广东频道
                 gd_lines.append(line)
+            elif channel_name in gd_dictionary 和 check_url_existence(cs_lines, channel_address): #地方台-潮汕频道
+                cs_lines.append(line)     
             elif channel_name in hn_dictionary and check_url_existence(hn_lines, channel_address):  #地方台-湖南频道
                 hn_lines.append(line)
             elif channel_name in hb_dictionary and check_url_existence(hb_lines, channel_address):  #地方台-湖北频道
@@ -475,6 +478,8 @@ version=formatted_time+",https://gitee.com/xingpeibin/zb/raw/master/ds.mp4"
 
 # 瘦身版
 all_lines_simple =  ["更新时间,#genre#"] + [version] + ['\n'] +\
+             ["潮汕频道,#genre#"] + sort_data(cs_dictionary,ordered_deduplicate(cs_lines)) + ['\n'] + \
+             ["广东频道,#genre#"] + sort_data(gd_dictionary,ordered_deduplicate(gd_lines)) + ['\n'] + \
              ["央视频道,#genre#"] + sort_data(ys_dictionary,ordered_deduplicate(ys_lines)) + ['\n'] + \
              ["卫视频道,#genre#"] + sort_data(ws_dictionary,ordered_deduplicate(ws_lines)) + ['\n'] + \
              ["港澳台,#genre#"] + sort_data(gat_dictionary,ordered_deduplicate(gat_lines)) + ['\n'] + \
@@ -499,7 +504,6 @@ all_lines =  all_lines_simple + ['\n'] + \
              ["上海频道,#genre#"] + sort_data(sh_dictionary,ordered_deduplicate(sh_lines)) + ['\n'] + \
              ["湖南频道,#genre#"] + sort_data(hn_dictionary,ordered_deduplicate(hn_lines)) + ['\n'] + \
              ["湖北频道,#genre#"] + sort_data(hb_dictionary,ordered_deduplicate(hb_lines)) + ['\n'] + \
-             ["广东频道,#genre#"] + sort_data(gd_dictionary,ordered_deduplicate(gd_lines)) + ['\n'] + \
              ["浙江频道,#genre#"] + sort_data(zj_dictionary,ordered_deduplicate(zj_lines)) + ['\n'] + \
              ["山东频道,#genre#"] + sort_data(shandong_dictionary,ordered_deduplicate(shandong_lines)) + ['\n'] + \
              ["江苏频道,#genre#"] + sorted(ordered_deduplicate(jsu_lines)) + ['\n'] + \
