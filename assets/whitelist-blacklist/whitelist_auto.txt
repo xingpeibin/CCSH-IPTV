@@ -1,5 +1,5 @@
 更新时间,#genre#
-20241220-08-00-43,url
+20241220-08-00-43,https://gitee.com/xingpeibin/zb/raw/master/ds.mp4
 
 
 RespoTime,whitelist,#genre#
